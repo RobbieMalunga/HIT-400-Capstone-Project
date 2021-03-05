@@ -1,0 +1,3493 @@
+{
+  "contractName": "MadicineW_D",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "name": "BatchID",
+          "type": "address"
+        },
+        {
+          "name": "Sender",
+          "type": "address"
+        },
+        {
+          "name": "Shipper",
+          "type": "address"
+        },
+        {
+          "name": "Receiver",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "BatchID",
+          "type": "address"
+        },
+        {
+          "name": "Shipper",
+          "type": "address"
+        }
+      ],
+      "name": "pickWD",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "BatchID",
+          "type": "address"
+        },
+        {
+          "name": "Receiver",
+          "type": "address"
+        }
+      ],
+      "name": "recieveWD",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getBatchIDStatus",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"BatchID\",\"type\":\"address\"},{\"name\":\"Shipper\",\"type\":\"address\"}],\"name\":\"pickWD\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getBatchIDStatus\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"BatchID\",\"type\":\"address\"},{\"name\":\"Receiver\",\"type\":\"address\"}],\"name\":\"recieveWD\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"BatchID\",\"type\":\"address\"},{\"name\":\"Sender\",\"type\":\"address\"},{\"name\":\"Shipper\",\"type\":\"address\"},{\"name\":\"Receiver\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{},\"notice\":\"******************************************** MadicineW_D *****************************************\"}},\"settings\":{\"compilationTarget\":{\"/C/Users/Dell/Documents/GitHub/Blockchain_SupplyChain/contracts/MadicineW_D.sol\":\"MadicineW_D\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Dell/Documents/GitHub/Blockchain_SupplyChain/contracts/Madicine.sol\":{\"keccak256\":\"0x149ace7b0412ba6ada9369e1869f017587848ae78abcb273b9aab7c4aa2da6cd\",\"urls\":[\"bzzr://4834e78cfc0cd20ab20cd781d42f7f7fda89acf4616580cd6fb0ce678c45df6f\"]},\"/C/Users/Dell/Documents/GitHub/Blockchain_SupplyChain/contracts/MadicineW_D.sol\":{\"keccak256\":\"0x555c3a391724037bc3668a6211e570bba7c24d9e01f08a14da4228a728de6a1e\",\"urls\":[\"bzzr://4e491270aa718fe441eac4a3ddbbeec9c20e106280ff76d5413a4f52b050d19e\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516080806104bb8339810180604052608081101561003057600080fd5b5080516020820151604083015160609093015160008054600160a060020a0319908116600160a060020a03948516908117835560018054831696861696909617909555600280548216909517909455600380548516958416959095179094556004805490931691161760a060020a60ff02191690556104069081906100b590396000f3fe608060405260043610610050577c01000000000000000000000000000000000000000000000000000000006000350463443c28d88114610055578063d2f3fcc714610092578063f4c07229146100b9575b600080fd5b34801561006157600080fd5b506100906004803603604081101561007857600080fd5b50600160a060020a03813581169160200135166100f4565b005b34801561009e57600080fd5b506100a7610257565b60408051918252519081900360200190f35b3480156100c557600080fd5b50610090600480360360408110156100dc57600080fd5b50600160a060020a0381358116916020013516610288565b600354600160a060020a0382811691161461019657604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602f60248201527f4f6e6c79204173736f63696174656420736869707065722063616e2063616c6c60448201527f20746869732066756e6374696f6e2e0000000000000000000000000000000000606482015290519081900360840190fd5b6004805474ff000000000000000000000000000000000000000019167401000000000000000000000000000000000000000017808255600254604080517fbd786835000000000000000000000000000000000000000000000000000000008152600160a060020a03938416948101949094529082166024840152519084169163bd78683591604480830192600092919082900301818387803b15801561023b57600080fd5b505af115801561024f573d6000803e3d6000fd5b505050505050565b60045460009074010000000000000000000000000000000000000000900460ff16600281111561028357fe5b905090565b600454600160a060020a0382811691161461032a57604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603060248201527f4f6e6c79204173736f6369617465642072656365697665722063616e2063616c60448201527f6c20746869732066756e6374696f6e2e00000000000000000000000000000000606482015290519081900360840190fd5b600480546002919074ff000000000000000000000000000000000000000019167401000000000000000000000000000000000000000083021790555081600160a060020a031663952565cf826040518263ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018082600160a060020a0316600160a060020a03168152602001915050600060405180830381600087803b15801561023b57600080fdfea165627a7a723058200ee72eb855f2fd64fcff2715837733431e38bf79c73eca14fad1b10c1a960bbf0029",
+  "deployedBytecode": "0x608060405260043610610050577c01000000000000000000000000000000000000000000000000000000006000350463443c28d88114610055578063d2f3fcc714610092578063f4c07229146100b9575b600080fd5b34801561006157600080fd5b506100906004803603604081101561007857600080fd5b50600160a060020a03813581169160200135166100f4565b005b34801561009e57600080fd5b506100a7610257565b60408051918252519081900360200190f35b3480156100c557600080fd5b50610090600480360360408110156100dc57600080fd5b50600160a060020a0381358116916020013516610288565b600354600160a060020a0382811691161461019657604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152602f60248201527f4f6e6c79204173736f63696174656420736869707065722063616e2063616c6c60448201527f20746869732066756e6374696f6e2e0000000000000000000000000000000000606482015290519081900360840190fd5b6004805474ff000000000000000000000000000000000000000019167401000000000000000000000000000000000000000017808255600254604080517fbd786835000000000000000000000000000000000000000000000000000000008152600160a060020a03938416948101949094529082166024840152519084169163bd78683591604480830192600092919082900301818387803b15801561023b57600080fd5b505af115801561024f573d6000803e3d6000fd5b505050505050565b60045460009074010000000000000000000000000000000000000000900460ff16600281111561028357fe5b905090565b600454600160a060020a0382811691161461032a57604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152603060248201527f4f6e6c79204173736f6369617465642072656365697665722063616e2063616c60448201527f6c20746869732066756e6374696f6e2e00000000000000000000000000000000606482015290519081900360840190fd5b600480546002919074ff000000000000000000000000000000000000000019167401000000000000000000000000000000000000000083021790555081600160a060020a031663952565cf826040518263ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018082600160a060020a0316600160a060020a03168152602001915050600060405180830381600087803b15801561023b57600080fdfea165627a7a723058200ee72eb855f2fd64fcff2715837733431e38bf79c73eca14fad1b10c1a960bbf0029",
+  "sourceMap": "173:1387:2:-;;;416:315;8:9:-1;5:2;;;30:1;27;20:12;5:2;416:315:2;;;;;;;;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;-1:-1;416:315:2;;;;;;;;;;;;;;;557:5;:14;;-1:-1:-1;;;;;;557:14:2;;;-1:-1:-1;;;;;557:14:2;;;;;;;;-1:-1:-1;582:17:2;;;;;;;;;;;;;;610:6;:15;;;;;;;;;;636:7;:17;;;;;;;;;;;;;;664:8;:19;;;;;;;;-1:-1:-1;;;;;;694:25:2;;;173:1387;;;;;;;;",
+  "deployedSourceMap": "173:1387:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;745:344;;8:9:-1;5:2;;;30:1;27;20:12;5:2;745:344:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;745:344:2;;;;;;;;;;:::i;:::-;;1447:108;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1447:108:2;;;:::i;:::-;;;;;;;;;;;;;;;;1103:334;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1103:334:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;1103:334:2;;;;;;;;;;:::i;745:344::-;871:7;;-1:-1:-1;860:18:2;;;871:7;;860:18;838:115;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;964:6;:25;;-1:-1:-1;;964:25:2;;;;;;1064:6;;1002:79;;;;;;-1:-1:-1;1041:8:2;;;1002:79;;;;;;;1064:6;;;1002:79;;;;;:24;;;;;;:79;;;;;-1:-1:-1;;1002:79:2;;;;;;;-1:-1:-1;1002:24:2;:79;;;5:2:-1;;;;30:1;27;20:12;5:2;1002:79:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1002:79:2;;;;745:344;;:::o;1447:108::-;1540:6;;1505:4;;1540:6;;;;;1535:12;;;;;;;;1528:19;;1447:108;:::o;1103:334::-;1234:8;;-1:-1:-1;1222:20:2;;;1234:8;;1222:20;1200:118;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1329:6;:25;;-1:-1:-1;;1329:25:2;;;;;1367:62;;;;;;-1:-1:-1;1367:62:2;;;;;;;;;;;;:28;;;;;;:62;;;;;-1:-1:-1;;1367:62:2;;;;;;;;-1:-1:-1;1367:28:2;:62;;;5:2:-1;;;;30:1;27;20:12",
+  "source": "pragma solidity >=0.4.25 <0.6.0;\r\n\r\nimport './Madicine.sol';\r\n\r\n/********************************************** MadicineW_D ******************************************/\r\n\r\n\r\ncontract MadicineW_D {\r\n\r\n    address Owner;\r\n\r\n    enum packageStatus { atcreator, picked, delivered}\r\n\r\n\r\n    address batchid;\r\n\r\n    address sender;\r\n\r\n    address shipper;\r\n\r\n    address receiver;\r\n\r\n    packageStatus status;\r\n\r\n\r\n\r\n\r\n    constructor(\r\n        address BatchID,\r\n        address Sender,\r\n        address Shipper,\r\n        address Receiver\r\n    ) public {\r\n        Owner = Sender;\r\n        batchid = BatchID;\r\n        sender = Sender;\r\n        shipper = Shipper;\r\n        receiver = Receiver;\r\n        status = packageStatus(0);\r\n\r\n\r\n    }\r\n\r\n\r\n\r\n\r\n    function pickWD(\r\n        address BatchID,\r\n        address Shipper\r\n    ) public {\r\n        require(\r\n            Shipper == shipper,\r\n            \"Only Associated shipper can call this function.\"\r\n        );\r\n        status = packageStatus(1);\r\n\r\n        Madicine(BatchID).sendWD(\r\n            receiver,\r\n            sender\r\n        );\r\n    }\r\n\r\n\r\n\r\n\r\n    function recieveWD(\r\n        address BatchID,\r\n        address Receiver\r\n    ) public {\r\n        require(\r\n            Receiver == receiver,\r\n            \"Only Associated receiver can call this function.\"\r\n        );\r\n        status = packageStatus(2);\r\n\r\n        Madicine(BatchID).recievedWD(\r\n            Receiver\r\n        );\r\n    }\r\n\r\n\r\n    function getBatchIDStatus() public view returns(\r\n        uint\r\n    ) {\r\n        return uint(status);\r\n    }\r\n\r\n}\r\n",
+  "sourcePath": "C:\\Users\\Dell\\Documents\\GitHub\\Blockchain_SupplyChain\\contracts\\MadicineW_D.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Dell/Documents/GitHub/Blockchain_SupplyChain/contracts/MadicineW_D.sol",
+    "exportedSymbols": {
+      "MadicineW_D": [
+        633
+      ]
+    },
+    "id": 634,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 510,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".25",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:2"
+      },
+      {
+        "absolutePath": "/C/Users/Dell/Documents/GitHub/Blockchain_SupplyChain/contracts/Madicine.sol",
+        "file": "./Madicine.sol",
+        "id": 511,
+        "nodeType": "ImportDirective",
+        "scope": 634,
+        "sourceUnit": 384,
+        "src": "36:24:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "******************************************** MadicineW_D *****************************************",
+        "fullyImplemented": true,
+        "id": 633,
+        "linearizedBaseContracts": [
+          633
+        ],
+        "name": "MadicineW_D",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 513,
+            "name": "Owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 633,
+            "src": "203:13:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 512,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "203:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "canonicalName": "MadicineW_D.packageStatus",
+            "id": 517,
+            "members": [
+              {
+                "id": 514,
+                "name": "atcreator",
+                "nodeType": "EnumValue",
+                "src": "246:9:2"
+              },
+              {
+                "id": 515,
+                "name": "picked",
+                "nodeType": "EnumValue",
+                "src": "257:6:2"
+              },
+              {
+                "id": 516,
+                "name": "delivered",
+                "nodeType": "EnumValue",
+                "src": "265:9:2"
+              }
+            ],
+            "name": "packageStatus",
+            "nodeType": "EnumDefinition",
+            "src": "225:50:2"
+          },
+          {
+            "constant": false,
+            "id": 519,
+            "name": "batchid",
+            "nodeType": "VariableDeclaration",
+            "scope": 633,
+            "src": "285:15:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 518,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "285:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 521,
+            "name": "sender",
+            "nodeType": "VariableDeclaration",
+            "scope": 633,
+            "src": "309:14:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 520,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "309:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 523,
+            "name": "shipper",
+            "nodeType": "VariableDeclaration",
+            "scope": 633,
+            "src": "332:15:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 522,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "332:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 525,
+            "name": "receiver",
+            "nodeType": "VariableDeclaration",
+            "scope": 633,
+            "src": "356:16:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 524,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "356:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 527,
+            "name": "status",
+            "nodeType": "VariableDeclaration",
+            "scope": 633,
+            "src": "381:20:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_packageStatus_$517",
+              "typeString": "enum MadicineW_D.packageStatus"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 526,
+              "name": "packageStatus",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 517,
+              "src": "381:13:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_packageStatus_$517",
+                "typeString": "enum MadicineW_D.packageStatus"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 564,
+              "nodeType": "Block",
+              "src": "546:185:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 540,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 538,
+                      "name": "Owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 513,
+                      "src": "557:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 539,
+                      "name": "Sender",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 531,
+                      "src": "565:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "557:14:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 541,
+                  "nodeType": "ExpressionStatement",
+                  "src": "557:14:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 544,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 542,
+                      "name": "batchid",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 519,
+                      "src": "582:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 543,
+                      "name": "BatchID",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 529,
+                      "src": "592:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "582:17:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 545,
+                  "nodeType": "ExpressionStatement",
+                  "src": "582:17:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 548,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 546,
+                      "name": "sender",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 521,
+                      "src": "610:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 547,
+                      "name": "Sender",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 531,
+                      "src": "619:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "610:15:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 549,
+                  "nodeType": "ExpressionStatement",
+                  "src": "610:15:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 552,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 550,
+                      "name": "shipper",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 523,
+                      "src": "636:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 551,
+                      "name": "Shipper",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 533,
+                      "src": "646:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "636:17:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 553,
+                  "nodeType": "ExpressionStatement",
+                  "src": "636:17:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 556,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 554,
+                      "name": "receiver",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 525,
+                      "src": "664:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 555,
+                      "name": "Receiver",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 535,
+                      "src": "675:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "664:19:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 557,
+                  "nodeType": "ExpressionStatement",
+                  "src": "664:19:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 562,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 558,
+                      "name": "status",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 527,
+                      "src": "694:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_packageStatus_$517",
+                        "typeString": "enum MadicineW_D.packageStatus"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 560,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "717:1:2",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          }
+                        ],
+                        "id": 559,
+                        "name": "packageStatus",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 517,
+                        "src": "703:13:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_packageStatus_$517_$",
+                          "typeString": "type(enum MadicineW_D.packageStatus)"
+                        }
+                      },
+                      "id": 561,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "703:16:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_packageStatus_$517",
+                        "typeString": "enum MadicineW_D.packageStatus"
+                      }
+                    },
+                    "src": "694:25:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_packageStatus_$517",
+                      "typeString": "enum MadicineW_D.packageStatus"
+                    }
+                  },
+                  "id": 563,
+                  "nodeType": "ExpressionStatement",
+                  "src": "694:25:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 565,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 536,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 529,
+                  "name": "BatchID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 565,
+                  "src": "438:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 528,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "438:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 531,
+                  "name": "Sender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 565,
+                  "src": "464:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 530,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "464:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 533,
+                  "name": "Shipper",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 565,
+                  "src": "489:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 532,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "489:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 535,
+                  "name": "Receiver",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 565,
+                  "src": "515:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 534,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "515:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "427:111:2"
+            },
+            "returnParameters": {
+              "id": 537,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "546:0:2"
+            },
+            "scope": 633,
+            "src": "416:315:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 593,
+              "nodeType": "Block",
+              "src": "827:262:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 575,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 573,
+                          "name": "Shipper",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 569,
+                          "src": "860:7:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 574,
+                          "name": "shipper",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 523,
+                          "src": "871:7:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "860:18:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4f6e6c79204173736f63696174656420736869707065722063616e2063616c6c20746869732066756e6374696f6e2e",
+                        "id": 576,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "893:49:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_7e8ff11e36e2ab0dd6bc65777bfe081c640b627c494b7cef7625b14978bd0f69",
+                          "typeString": "literal_string \"Only Associated shipper can call this function.\""
+                        },
+                        "value": "Only Associated shipper can call this function."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_7e8ff11e36e2ab0dd6bc65777bfe081c640b627c494b7cef7625b14978bd0f69",
+                          "typeString": "literal_string \"Only Associated shipper can call this function.\""
+                        }
+                      ],
+                      "id": 572,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4231,
+                        4232
+                      ],
+                      "referencedDeclaration": 4232,
+                      "src": "838:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 577,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "838:115:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 578,
+                  "nodeType": "ExpressionStatement",
+                  "src": "838:115:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 583,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 579,
+                      "name": "status",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 527,
+                      "src": "964:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_packageStatus_$517",
+                        "typeString": "enum MadicineW_D.packageStatus"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "31",
+                          "id": 581,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "987:1:2",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          "value": "1"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          }
+                        ],
+                        "id": 580,
+                        "name": "packageStatus",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 517,
+                        "src": "973:13:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_packageStatus_$517_$",
+                          "typeString": "type(enum MadicineW_D.packageStatus)"
+                        }
+                      },
+                      "id": 582,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "973:16:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_packageStatus_$517",
+                        "typeString": "enum MadicineW_D.packageStatus"
+                      }
+                    },
+                    "src": "964:25:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_packageStatus_$517",
+                      "typeString": "enum MadicineW_D.packageStatus"
+                    }
+                  },
+                  "id": 584,
+                  "nodeType": "ExpressionStatement",
+                  "src": "964:25:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 589,
+                        "name": "receiver",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 525,
+                        "src": "1041:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 590,
+                        "name": "sender",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 521,
+                        "src": "1064:6:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 586,
+                            "name": "BatchID",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 567,
+                            "src": "1011:7:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 585,
+                          "name": "Madicine",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 383,
+                          "src": "1002:8:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_Madicine_$383_$",
+                            "typeString": "type(contract Madicine)"
+                          }
+                        },
+                        "id": 587,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1002:17:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Madicine_$383",
+                          "typeString": "contract Madicine"
+                        }
+                      },
+                      "id": 588,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sendWD",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 319,
+                      "src": "1002:24:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$returns$__$",
+                        "typeString": "function (address,address) external"
+                      }
+                    },
+                    "id": 591,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1002:79:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 592,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1002:79:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 594,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pickWD",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 570,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 567,
+                  "name": "BatchID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 594,
+                  "src": "771:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 566,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "771:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 569,
+                  "name": "Shipper",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 594,
+                  "src": "797:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 568,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "797:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "760:59:2"
+            },
+            "returnParameters": {
+              "id": 571,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "827:0:2"
+            },
+            "scope": 633,
+            "src": "745:344:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 621,
+              "nodeType": "Block",
+              "src": "1189:248:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 604,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 602,
+                          "name": "Receiver",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 598,
+                          "src": "1222:8:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 603,
+                          "name": "receiver",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 525,
+                          "src": "1234:8:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "1222:20:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4f6e6c79204173736f6369617465642072656365697665722063616e2063616c6c20746869732066756e6374696f6e2e",
+                        "id": 605,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1257:50:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_2d48aa8c380eefa8a0863748f10fac2097531a24c5ac74d752708dbbe6aa840f",
+                          "typeString": "literal_string \"Only Associated receiver can call this function.\""
+                        },
+                        "value": "Only Associated receiver can call this function."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_2d48aa8c380eefa8a0863748f10fac2097531a24c5ac74d752708dbbe6aa840f",
+                          "typeString": "literal_string \"Only Associated receiver can call this function.\""
+                        }
+                      ],
+                      "id": 601,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4231,
+                        4232
+                      ],
+                      "referencedDeclaration": 4232,
+                      "src": "1200:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 606,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1200:118:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 607,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1200:118:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 612,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 608,
+                      "name": "status",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 527,
+                      "src": "1329:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_packageStatus_$517",
+                        "typeString": "enum MadicineW_D.packageStatus"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "32",
+                          "id": 610,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1352:1:2",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_2_by_1",
+                            "typeString": "int_const 2"
+                          },
+                          "value": "2"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_rational_2_by_1",
+                            "typeString": "int_const 2"
+                          }
+                        ],
+                        "id": 609,
+                        "name": "packageStatus",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 517,
+                        "src": "1338:13:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_packageStatus_$517_$",
+                          "typeString": "type(enum MadicineW_D.packageStatus)"
+                        }
+                      },
+                      "id": 611,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1338:16:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_packageStatus_$517",
+                        "typeString": "enum MadicineW_D.packageStatus"
+                      }
+                    },
+                    "src": "1329:25:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_packageStatus_$517",
+                      "typeString": "enum MadicineW_D.packageStatus"
+                    }
+                  },
+                  "id": 613,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1329:25:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 618,
+                        "name": "Receiver",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 598,
+                        "src": "1410:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 615,
+                            "name": "BatchID",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 596,
+                            "src": "1376:7:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 614,
+                          "name": "Madicine",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 383,
+                          "src": "1367:8:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_Madicine_$383_$",
+                            "typeString": "type(contract Madicine)"
+                          }
+                        },
+                        "id": 616,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1367:17:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Madicine_$383",
+                          "typeString": "contract Madicine"
+                        }
+                      },
+                      "id": 617,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "recievedWD",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 338,
+                      "src": "1367:28:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address) external"
+                      }
+                    },
+                    "id": 619,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1367:62:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 620,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1367:62:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 622,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "recieveWD",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 599,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 596,
+                  "name": "BatchID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 622,
+                  "src": "1132:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 595,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1132:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 598,
+                  "name": "Receiver",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 622,
+                  "src": "1158:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 597,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1158:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1121:60:2"
+            },
+            "returnParameters": {
+              "id": 600,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1189:0:2"
+            },
+            "scope": 633,
+            "src": "1103:334:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 631,
+              "nodeType": "Block",
+              "src": "1517:38:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 628,
+                        "name": "status",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 527,
+                        "src": "1540:6:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_packageStatus_$517",
+                          "typeString": "enum MadicineW_D.packageStatus"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_packageStatus_$517",
+                          "typeString": "enum MadicineW_D.packageStatus"
+                        }
+                      ],
+                      "id": 627,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "1535:4:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_uint256_$",
+                        "typeString": "type(uint256)"
+                      },
+                      "typeName": "uint"
+                    },
+                    "id": 629,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1535:12:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 626,
+                  "id": 630,
+                  "nodeType": "Return",
+                  "src": "1528:19:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 632,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBatchIDStatus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 623,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1472:2:2"
+            },
+            "returnParameters": {
+              "id": 626,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 625,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 632,
+                  "src": "1505:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 624,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1505:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1494:22:2"
+            },
+            "scope": 633,
+            "src": "1447:108:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 634,
+        "src": "173:1387:2"
+      }
+    ],
+    "src": "0:1562:2"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/Users/Dell/Documents/GitHub/Blockchain_SupplyChain/contracts/MadicineW_D.sol",
+      "exportedSymbols": {
+        "MadicineW_D": [
+          633
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".25",
+            "<",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 510,
+        "name": "PragmaDirective",
+        "src": "0:32:2"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 384,
+          "absolutePath": "/C/Users/Dell/Documents/GitHub/Blockchain_SupplyChain/contracts/Madicine.sol",
+          "file": "./Madicine.sol",
+          "scope": 634,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 511,
+        "name": "ImportDirective",
+        "src": "36:24:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": "******************************************** MadicineW_D *****************************************",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            633
+          ],
+          "name": "MadicineW_D",
+          "scope": 634
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "Owner",
+              "scope": 633,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 512,
+                "name": "ElementaryTypeName",
+                "src": "203:7:2"
+              }
+            ],
+            "id": 513,
+            "name": "VariableDeclaration",
+            "src": "203:13:2"
+          },
+          {
+            "attributes": {
+              "canonicalName": "MadicineW_D.packageStatus",
+              "name": "packageStatus"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "atcreator"
+                },
+                "id": 514,
+                "name": "EnumValue",
+                "src": "246:9:2"
+              },
+              {
+                "attributes": {
+                  "name": "picked"
+                },
+                "id": 515,
+                "name": "EnumValue",
+                "src": "257:6:2"
+              },
+              {
+                "attributes": {
+                  "name": "delivered"
+                },
+                "id": 516,
+                "name": "EnumValue",
+                "src": "265:9:2"
+              }
+            ],
+            "id": 517,
+            "name": "EnumDefinition",
+            "src": "225:50:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "batchid",
+              "scope": 633,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 518,
+                "name": "ElementaryTypeName",
+                "src": "285:7:2"
+              }
+            ],
+            "id": 519,
+            "name": "VariableDeclaration",
+            "src": "285:15:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "sender",
+              "scope": 633,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 520,
+                "name": "ElementaryTypeName",
+                "src": "309:7:2"
+              }
+            ],
+            "id": 521,
+            "name": "VariableDeclaration",
+            "src": "309:14:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "shipper",
+              "scope": 633,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 522,
+                "name": "ElementaryTypeName",
+                "src": "332:7:2"
+              }
+            ],
+            "id": 523,
+            "name": "VariableDeclaration",
+            "src": "332:15:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "receiver",
+              "scope": 633,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 524,
+                "name": "ElementaryTypeName",
+                "src": "356:7:2"
+              }
+            ],
+            "id": 525,
+            "name": "VariableDeclaration",
+            "src": "356:16:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "status",
+              "scope": 633,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "enum MadicineW_D.packageStatus",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "packageStatus",
+                  "referencedDeclaration": 517,
+                  "type": "enum MadicineW_D.packageStatus"
+                },
+                "id": 526,
+                "name": "UserDefinedTypeName",
+                "src": "381:13:2"
+              }
+            ],
+            "id": 527,
+            "name": "VariableDeclaration",
+            "src": "381:20:2"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 633,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "BatchID",
+                      "scope": 565,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 528,
+                        "name": "ElementaryTypeName",
+                        "src": "438:7:2"
+                      }
+                    ],
+                    "id": 529,
+                    "name": "VariableDeclaration",
+                    "src": "438:15:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "Sender",
+                      "scope": 565,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 530,
+                        "name": "ElementaryTypeName",
+                        "src": "464:7:2"
+                      }
+                    ],
+                    "id": 531,
+                    "name": "VariableDeclaration",
+                    "src": "464:14:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "Shipper",
+                      "scope": 565,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 532,
+                        "name": "ElementaryTypeName",
+                        "src": "489:7:2"
+                      }
+                    ],
+                    "id": 533,
+                    "name": "VariableDeclaration",
+                    "src": "489:15:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "Receiver",
+                      "scope": 565,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 534,
+                        "name": "ElementaryTypeName",
+                        "src": "515:7:2"
+                      }
+                    ],
+                    "id": 535,
+                    "name": "VariableDeclaration",
+                    "src": "515:16:2"
+                  }
+                ],
+                "id": 536,
+                "name": "ParameterList",
+                "src": "427:111:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 537,
+                "name": "ParameterList",
+                "src": "546:0:2"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 513,
+                              "type": "address",
+                              "value": "Owner"
+                            },
+                            "id": 538,
+                            "name": "Identifier",
+                            "src": "557:5:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 531,
+                              "type": "address",
+                              "value": "Sender"
+                            },
+                            "id": 539,
+                            "name": "Identifier",
+                            "src": "565:6:2"
+                          }
+                        ],
+                        "id": 540,
+                        "name": "Assignment",
+                        "src": "557:14:2"
+                      }
+                    ],
+                    "id": 541,
+                    "name": "ExpressionStatement",
+                    "src": "557:14:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 519,
+                              "type": "address",
+                              "value": "batchid"
+                            },
+                            "id": 542,
+                            "name": "Identifier",
+                            "src": "582:7:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 529,
+                              "type": "address",
+                              "value": "BatchID"
+                            },
+                            "id": 543,
+                            "name": "Identifier",
+                            "src": "592:7:2"
+                          }
+                        ],
+                        "id": 544,
+                        "name": "Assignment",
+                        "src": "582:17:2"
+                      }
+                    ],
+                    "id": 545,
+                    "name": "ExpressionStatement",
+                    "src": "582:17:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 521,
+                              "type": "address",
+                              "value": "sender"
+                            },
+                            "id": 546,
+                            "name": "Identifier",
+                            "src": "610:6:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 531,
+                              "type": "address",
+                              "value": "Sender"
+                            },
+                            "id": 547,
+                            "name": "Identifier",
+                            "src": "619:6:2"
+                          }
+                        ],
+                        "id": 548,
+                        "name": "Assignment",
+                        "src": "610:15:2"
+                      }
+                    ],
+                    "id": 549,
+                    "name": "ExpressionStatement",
+                    "src": "610:15:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 523,
+                              "type": "address",
+                              "value": "shipper"
+                            },
+                            "id": 550,
+                            "name": "Identifier",
+                            "src": "636:7:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 533,
+                              "type": "address",
+                              "value": "Shipper"
+                            },
+                            "id": 551,
+                            "name": "Identifier",
+                            "src": "646:7:2"
+                          }
+                        ],
+                        "id": 552,
+                        "name": "Assignment",
+                        "src": "636:17:2"
+                      }
+                    ],
+                    "id": 553,
+                    "name": "ExpressionStatement",
+                    "src": "636:17:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 525,
+                              "type": "address",
+                              "value": "receiver"
+                            },
+                            "id": 554,
+                            "name": "Identifier",
+                            "src": "664:8:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 535,
+                              "type": "address",
+                              "value": "Receiver"
+                            },
+                            "id": 555,
+                            "name": "Identifier",
+                            "src": "675:8:2"
+                          }
+                        ],
+                        "id": 556,
+                        "name": "Assignment",
+                        "src": "664:19:2"
+                      }
+                    ],
+                    "id": 557,
+                    "name": "ExpressionStatement",
+                    "src": "664:19:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "enum MadicineW_D.packageStatus"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 527,
+                              "type": "enum MadicineW_D.packageStatus",
+                              "value": "status"
+                            },
+                            "id": 558,
+                            "name": "Identifier",
+                            "src": "694:6:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "enum MadicineW_D.packageStatus",
+                              "type_conversion": true
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_rational_0_by_1",
+                                      "typeString": "int_const 0"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 517,
+                                  "type": "type(enum MadicineW_D.packageStatus)",
+                                  "value": "packageStatus"
+                                },
+                                "id": 559,
+                                "name": "Identifier",
+                                "src": "703:13:2"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 560,
+                                "name": "Literal",
+                                "src": "717:1:2"
+                              }
+                            ],
+                            "id": 561,
+                            "name": "FunctionCall",
+                            "src": "703:16:2"
+                          }
+                        ],
+                        "id": 562,
+                        "name": "Assignment",
+                        "src": "694:25:2"
+                      }
+                    ],
+                    "id": 563,
+                    "name": "ExpressionStatement",
+                    "src": "694:25:2"
+                  }
+                ],
+                "id": 564,
+                "name": "Block",
+                "src": "546:185:2"
+              }
+            ],
+            "id": 565,
+            "name": "FunctionDefinition",
+            "src": "416:315:2"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "pickWD",
+              "scope": 633,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "BatchID",
+                      "scope": 594,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 566,
+                        "name": "ElementaryTypeName",
+                        "src": "771:7:2"
+                      }
+                    ],
+                    "id": 567,
+                    "name": "VariableDeclaration",
+                    "src": "771:15:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "Shipper",
+                      "scope": 594,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 568,
+                        "name": "ElementaryTypeName",
+                        "src": "797:7:2"
+                      }
+                    ],
+                    "id": 569,
+                    "name": "VariableDeclaration",
+                    "src": "797:15:2"
+                  }
+                ],
+                "id": 570,
+                "name": "ParameterList",
+                "src": "760:59:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 571,
+                "name": "ParameterList",
+                "src": "827:0:2"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_7e8ff11e36e2ab0dd6bc65777bfe081c640b627c494b7cef7625b14978bd0f69",
+                                  "typeString": "literal_string \"Only Associated shipper can call this function.\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                4231,
+                                4232
+                              ],
+                              "referencedDeclaration": 4232,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 572,
+                            "name": "Identifier",
+                            "src": "838:7:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 569,
+                                  "type": "address",
+                                  "value": "Shipper"
+                                },
+                                "id": 573,
+                                "name": "Identifier",
+                                "src": "860:7:2"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 523,
+                                  "type": "address",
+                                  "value": "shipper"
+                                },
+                                "id": 574,
+                                "name": "Identifier",
+                                "src": "871:7:2"
+                              }
+                            ],
+                            "id": 575,
+                            "name": "BinaryOperation",
+                            "src": "860:18:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "4f6e6c79204173736f63696174656420736869707065722063616e2063616c6c20746869732066756e6374696f6e2e",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Only Associated shipper can call this function.\"",
+                              "value": "Only Associated shipper can call this function."
+                            },
+                            "id": 576,
+                            "name": "Literal",
+                            "src": "893:49:2"
+                          }
+                        ],
+                        "id": 577,
+                        "name": "FunctionCall",
+                        "src": "838:115:2"
+                      }
+                    ],
+                    "id": 578,
+                    "name": "ExpressionStatement",
+                    "src": "838:115:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "enum MadicineW_D.packageStatus"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 527,
+                              "type": "enum MadicineW_D.packageStatus",
+                              "value": "status"
+                            },
+                            "id": 579,
+                            "name": "Identifier",
+                            "src": "964:6:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "enum MadicineW_D.packageStatus",
+                              "type_conversion": true
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_rational_1_by_1",
+                                      "typeString": "int_const 1"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 517,
+                                  "type": "type(enum MadicineW_D.packageStatus)",
+                                  "value": "packageStatus"
+                                },
+                                "id": 580,
+                                "name": "Identifier",
+                                "src": "973:13:2"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "31",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 1",
+                                  "value": "1"
+                                },
+                                "id": 581,
+                                "name": "Literal",
+                                "src": "987:1:2"
+                              }
+                            ],
+                            "id": 582,
+                            "name": "FunctionCall",
+                            "src": "973:16:2"
+                          }
+                        ],
+                        "id": 583,
+                        "name": "Assignment",
+                        "src": "964:25:2"
+                      }
+                    ],
+                    "id": 584,
+                    "name": "ExpressionStatement",
+                    "src": "964:25:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sendWD",
+                              "referencedDeclaration": 319,
+                              "type": "function (address,address) external"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "contract Madicine",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_address",
+                                          "typeString": "address"
+                                        }
+                                      ],
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 383,
+                                      "type": "type(contract Madicine)",
+                                      "value": "Madicine"
+                                    },
+                                    "id": 585,
+                                    "name": "Identifier",
+                                    "src": "1002:8:2"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 567,
+                                      "type": "address",
+                                      "value": "BatchID"
+                                    },
+                                    "id": 586,
+                                    "name": "Identifier",
+                                    "src": "1011:7:2"
+                                  }
+                                ],
+                                "id": 587,
+                                "name": "FunctionCall",
+                                "src": "1002:17:2"
+                              }
+                            ],
+                            "id": 588,
+                            "name": "MemberAccess",
+                            "src": "1002:24:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 525,
+                              "type": "address",
+                              "value": "receiver"
+                            },
+                            "id": 589,
+                            "name": "Identifier",
+                            "src": "1041:8:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 521,
+                              "type": "address",
+                              "value": "sender"
+                            },
+                            "id": 590,
+                            "name": "Identifier",
+                            "src": "1064:6:2"
+                          }
+                        ],
+                        "id": 591,
+                        "name": "FunctionCall",
+                        "src": "1002:79:2"
+                      }
+                    ],
+                    "id": 592,
+                    "name": "ExpressionStatement",
+                    "src": "1002:79:2"
+                  }
+                ],
+                "id": 593,
+                "name": "Block",
+                "src": "827:262:2"
+              }
+            ],
+            "id": 594,
+            "name": "FunctionDefinition",
+            "src": "745:344:2"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "recieveWD",
+              "scope": 633,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "BatchID",
+                      "scope": 622,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 595,
+                        "name": "ElementaryTypeName",
+                        "src": "1132:7:2"
+                      }
+                    ],
+                    "id": 596,
+                    "name": "VariableDeclaration",
+                    "src": "1132:15:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "Receiver",
+                      "scope": 622,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 597,
+                        "name": "ElementaryTypeName",
+                        "src": "1158:7:2"
+                      }
+                    ],
+                    "id": 598,
+                    "name": "VariableDeclaration",
+                    "src": "1158:16:2"
+                  }
+                ],
+                "id": 599,
+                "name": "ParameterList",
+                "src": "1121:60:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 600,
+                "name": "ParameterList",
+                "src": "1189:0:2"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_2d48aa8c380eefa8a0863748f10fac2097531a24c5ac74d752708dbbe6aa840f",
+                                  "typeString": "literal_string \"Only Associated receiver can call this function.\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                4231,
+                                4232
+                              ],
+                              "referencedDeclaration": 4232,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 601,
+                            "name": "Identifier",
+                            "src": "1200:7:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 598,
+                                  "type": "address",
+                                  "value": "Receiver"
+                                },
+                                "id": 602,
+                                "name": "Identifier",
+                                "src": "1222:8:2"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 525,
+                                  "type": "address",
+                                  "value": "receiver"
+                                },
+                                "id": 603,
+                                "name": "Identifier",
+                                "src": "1234:8:2"
+                              }
+                            ],
+                            "id": 604,
+                            "name": "BinaryOperation",
+                            "src": "1222:20:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "4f6e6c79204173736f6369617465642072656365697665722063616e2063616c6c20746869732066756e6374696f6e2e",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Only Associated receiver can call this function.\"",
+                              "value": "Only Associated receiver can call this function."
+                            },
+                            "id": 605,
+                            "name": "Literal",
+                            "src": "1257:50:2"
+                          }
+                        ],
+                        "id": 606,
+                        "name": "FunctionCall",
+                        "src": "1200:118:2"
+                      }
+                    ],
+                    "id": 607,
+                    "name": "ExpressionStatement",
+                    "src": "1200:118:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "enum MadicineW_D.packageStatus"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 527,
+                              "type": "enum MadicineW_D.packageStatus",
+                              "value": "status"
+                            },
+                            "id": 608,
+                            "name": "Identifier",
+                            "src": "1329:6:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "enum MadicineW_D.packageStatus",
+                              "type_conversion": true
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_rational_2_by_1",
+                                      "typeString": "int_const 2"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 517,
+                                  "type": "type(enum MadicineW_D.packageStatus)",
+                                  "value": "packageStatus"
+                                },
+                                "id": 609,
+                                "name": "Identifier",
+                                "src": "1338:13:2"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "32",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 2",
+                                  "value": "2"
+                                },
+                                "id": 610,
+                                "name": "Literal",
+                                "src": "1352:1:2"
+                              }
+                            ],
+                            "id": 611,
+                            "name": "FunctionCall",
+                            "src": "1338:16:2"
+                          }
+                        ],
+                        "id": 612,
+                        "name": "Assignment",
+                        "src": "1329:25:2"
+                      }
+                    ],
+                    "id": 613,
+                    "name": "ExpressionStatement",
+                    "src": "1329:25:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "recievedWD",
+                              "referencedDeclaration": 338,
+                              "type": "function (address) external"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "contract Madicine",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_address",
+                                          "typeString": "address"
+                                        }
+                                      ],
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 383,
+                                      "type": "type(contract Madicine)",
+                                      "value": "Madicine"
+                                    },
+                                    "id": 614,
+                                    "name": "Identifier",
+                                    "src": "1367:8:2"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 596,
+                                      "type": "address",
+                                      "value": "BatchID"
+                                    },
+                                    "id": 615,
+                                    "name": "Identifier",
+                                    "src": "1376:7:2"
+                                  }
+                                ],
+                                "id": 616,
+                                "name": "FunctionCall",
+                                "src": "1367:17:2"
+                              }
+                            ],
+                            "id": 617,
+                            "name": "MemberAccess",
+                            "src": "1367:28:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 598,
+                              "type": "address",
+                              "value": "Receiver"
+                            },
+                            "id": 618,
+                            "name": "Identifier",
+                            "src": "1410:8:2"
+                          }
+                        ],
+                        "id": 619,
+                        "name": "FunctionCall",
+                        "src": "1367:62:2"
+                      }
+                    ],
+                    "id": 620,
+                    "name": "ExpressionStatement",
+                    "src": "1367:62:2"
+                  }
+                ],
+                "id": 621,
+                "name": "Block",
+                "src": "1189:248:2"
+              }
+            ],
+            "id": 622,
+            "name": "FunctionDefinition",
+            "src": "1103:334:2"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getBatchIDStatus",
+              "scope": 633,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 623,
+                "name": "ParameterList",
+                "src": "1472:2:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 632,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 624,
+                        "name": "ElementaryTypeName",
+                        "src": "1505:4:2"
+                      }
+                    ],
+                    "id": 625,
+                    "name": "VariableDeclaration",
+                    "src": "1505:4:2"
+                  }
+                ],
+                "id": 626,
+                "name": "ParameterList",
+                "src": "1494:22:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 626
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": true
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_enum$_packageStatus_$517",
+                                  "typeString": "enum MadicineW_D.packageStatus"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "type": "type(uint256)",
+                              "value": "uint"
+                            },
+                            "id": 627,
+                            "name": "ElementaryTypeNameExpression",
+                            "src": "1535:4:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 527,
+                              "type": "enum MadicineW_D.packageStatus",
+                              "value": "status"
+                            },
+                            "id": 628,
+                            "name": "Identifier",
+                            "src": "1540:6:2"
+                          }
+                        ],
+                        "id": 629,
+                        "name": "FunctionCall",
+                        "src": "1535:12:2"
+                      }
+                    ],
+                    "id": 630,
+                    "name": "Return",
+                    "src": "1528:19:2"
+                  }
+                ],
+                "id": 631,
+                "name": "Block",
+                "src": "1517:38:2"
+              }
+            ],
+            "id": 632,
+            "name": "FunctionDefinition",
+            "src": "1447:108:2"
+          }
+        ],
+        "id": 633,
+        "name": "ContractDefinition",
+        "src": "173:1387:2"
+      }
+    ],
+    "id": 634,
+    "name": "SourceUnit",
+    "src": "0:1562:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-01-26T12:42:21.186Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {},
+    "notice": "******************************************** MadicineW_D *****************************************"
+  }
+}
