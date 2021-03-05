@@ -34,12 +34,12 @@ The Pharmaceutical supply chain is the sequence of activities and process to bri
 6. Distributer
 7. Pharma
 
-**Admin :** Admin register new users and assigne roles accourding to there work.
-**Supplier :** Supplier supply raw materials manufacturer by creating new batch with details of farm.
-**Transporter :** Transporter are responsible for shipping packages/consignment form one stage to other.
-**Manufacturer :** Manufacturer is responsible to manufacturer new medicine batches for shipping to either Wholesaler or Distribute, by updating information of raw materials details(like batchID and consumption units) that are use to manufacture new batch medicine and quantity.
-**Wholesaler :** Wholesaler is reponsible to receive medicine from Manufacturer and validate medicine quality, than transfer to Distributer.
-**Distrubuter :** Distributer is reponsible to distribute medicne to pharms and do varification on medicine quality and condition.
+**Admin :** Admin register new users and assigne roles accourding to there work.  
+**Supplier :** Supplier supply raw materials manufacturer by creating new batch with details of farm.  
+**Transporter :** Transporter are responsible for shipping packages/consignment form one stage to other.  
+**Manufacturer :** Manufacturer is responsible to manufacturer new medicine batches for shipping to either Wholesaler or Distribute, by updating information of raw materials details(like batchID and consumption units) that are use to manufacture new batch medicine and quantity.  
+**Wholesaler :** Wholesaler is reponsible to receive medicine from Manufacturer and validate medicine quality, than transfer to Distributer.  
+**Distrubuter :** Distributer is reponsible to distribute medicne to pharms and do varification on medicine quality and condition.  
 **Pharma :** Pharma is reponsible to provide right medicine to customer as per doctor priscribed and update medicine status.
 
 #### Tools and Technologies being used
